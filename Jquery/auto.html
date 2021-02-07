@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title> Auto Complete in JQuery</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <h1>Auto Complete In Jquiery Example</h1>
+    <div id="first" class="mydiv">
+        <label>Enter Your Fav City Name</label>
+        <input type="text" name="" id="city">
+
+    </div>
+    <br>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="core/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    var city = ["Mumbai", "Pune", "Nashik", "Aurangabd"]
+    $("#city").autocomplete({
+        source: city
+    }, {
+        autoFocuse: true,
+        delay: 300,
+        miniLength: 2,
+    });
+</script>

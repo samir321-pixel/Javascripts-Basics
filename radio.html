@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>User Input in JS</title>
+    <script type="text/javascript">
+        function fn1() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+            if (rd1.checked == true)
+                alert("The Selected is: ", +rd1.value);
+            else if (rd2.checked == true)
+                alert("The Selected is: ", +rd2.value);
+            else
+                alert("No Channel selected");
+        }
+    </script>
+</head>
+
+<body>
+    <input id="rd1" name="grp1" type="radio" value="Simple">Simple</input>
+    <input id="rd2" name="grp1" type="radio" value="learning">Learning</input>
+    <button onclick="fn1()">Click me</button>
+</body>
+
+</html>

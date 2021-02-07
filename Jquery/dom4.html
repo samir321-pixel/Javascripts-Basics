@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title> Dom Manipulation in JQuery Part 4</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+</head>
+
+<body>
+
+    <h1 class="myheading" id="heading1">Dom Manipulation in JQuery part 4 </h1>
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">Toggle Class</button>
+    <button id="btn4">Css</button>
+
+    <div id="div1" class="mydiv">
+        <p id="p1" class="c1">this is first para of first div</p>
+
+    </div>
+
+    <div id="div2" class="mydiv2">
+        <p id="p2" class="p2">this is Second para of Second div</p>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#div1").addClass("new");
+        })
+        $("#btn2").click(function () {
+            $("#div1").removeClass("new");
+        })
+        $("#btn3").click(function () {
+            $("#div1").toggleClass("new");
+        })
+        $("#btn4").click(function () {
+            $("#div1").css("font-size","89px");
+        })
+    });
+</script>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title> Mobile Number Validation</title>
+    <script type="text/javascript">
+        function validate() {
+            var text = document.getElementById("text1").value;
+            var regx = /[^7-9]/d{9}$/;
+            if (regx.test(text)) {
+                document.getElementById("lbltext").innerHTML = "Valid";
+                document.getElementById("lbltext").style.visibility = "visible";
+                document.getElementById("lbltext").style.color = "green";
+            }
+            else {
+                document.getElementById("lbltext").innerHTML = "Invalid";
+                document.getElementById("lbltext").style.visibility = "visible";
+                document.getElementById("lbltext").style.color = "red";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Mobile Number Validation</h1>
+    <form>
+        <input id="text1" placeholder="Phone" type="text">
+        <label id="lbltext" style="color: red; visibility: hidden;">Invalid</label>
+        <br><br>
+        <button onclick="validate()" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

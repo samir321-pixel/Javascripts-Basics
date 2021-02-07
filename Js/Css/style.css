@@ -1,0 +1,38 @@
+/* #heading1 {
+    color: blue;
+} */
+
+.mydiv {
+    border: 2px solid purple;
+    margin: 5px;
+    padding: 10px;
+}
+
+div p{
+    color: red;
+}
+.cube{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+
+
+.new{
+    font-weight: bold;
+    color: brown;
+    background-color: cornflowerblue;
+}
+
+.my{
+    border:2px solid rebeccapurple;
+    padding: 10px;
+}
+.first{
+    border:1px red;
+}

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Array in JS</title>
+    <script type="text/javascript">
+        var Car = {
+            car_brand: "Tesla",
+            car_model: "Model #",
+            price: 39877,
+            teslaautopilot: function () {
+                return "This car is Autopilot"
+            }
+        }
+        document.write("<h1>" + Car.teslaautopilot() + "</h2>")
+        document.write("<h1>Constructor in js</h2>")
+        function Cars(car_brand, car_model, price) {
+            this.car_brand = car_brand;
+            this.car_model = car_model;
+            this.price = price;
+            this.teslaautopilot = function () {
+                document.write("this is autopilot")
+            }
+        }
+
+        var c1 = new Cars("Tesla", "Bingo", 328)
+        document.write("<h2>" + c1.car_model + "</h2>")
+
+
+    </script>
+</head>
+
+<body>
+    Objects In Js
+</body>
+
+</html>

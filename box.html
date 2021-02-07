@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>User Input in JS</title>
+    <script type="text/javascript">
+        function fn1() {
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value)
+        }
+
+    </script>
+</head>
+
+<body>
+    <select id="selectbox">
+        <option value="Simple">Simple</option>
+        <option value="samir">Samir</option>
+        <option value="jeevansh">jeevansh</option>
+    </select>
+    <button onclick="fn1()">Click Me</button>
+
+</body>
+
+</html>

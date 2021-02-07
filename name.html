@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Get Element by Name</title>
+    <script type="text/javascript">
+        function changein() {
+            var para = document.getElementsByTagName("p");
+            para[0].style.fontSize = 25;
+            para[1].style.fontWeight = "bold";
+            para[2].style.fontStyle = "italic";
+            for (var i = 0; i < para.length; i++) {
+                para[i].style.fontSize = 22
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>This is Paragraph 1</p>
+    <p>This is Paragraph 2</p>
+    <p>This is Paragraph 3</p>
+    <p>This is Paragraph 4</p>
+    <p>This is Paragraph 5</p>
+    <p>This is Paragraph 6</p>
+    <br>
+    <button onclick="changein()">Click Me</button>
+</body>
+
+</html>

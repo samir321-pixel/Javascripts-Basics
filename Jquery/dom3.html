@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title> Dom Manipulation in JQuery Part 3</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+</head>
+
+<body>
+
+    <h1 class="myheading" id="heading1">Dom <b>Manipulation</b> in JQuery part 3 </h1>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">After</button>
+    <button id="btn4">Before</button>
+    <button id="btn5">Remove</button>
+    <button id="btn6">Empty</button>
+    <button id="btn7">Specific Remove</button>
+
+    <div id="div1" class="mydiv">
+        <p id="p1" class="c1">this is first para of first div</p>
+        <p id="p2" class="p2">this is Second para of first div</p>
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#div1").append("<p>This Is appended Para in first div </p>")
+        })
+
+        $("#btn2").click(function () {
+            $("#div1").prepend("<p>This Is Prepended Para in first div </p>")
+        })
+
+        $("#btn3").click(function () {
+            $("#div1").after("<p>This Is After Para in first div </p>")
+        })
+
+        $("#btn4").click(function () {
+            $("#div1").before("<p>This Is Before Para in first div </p>")
+        })
+
+        $("#btn5").click(function () {
+            $("#div1").remove()
+        })
+
+        $("#btn7").click(function () {
+            $("#p2").remove("#p2")
+        })
+
+        $("#btn6").click(function () {
+            $("#div1").empty()
+        })
+
+    });
+</script>

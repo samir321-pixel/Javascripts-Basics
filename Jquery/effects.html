@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title> Effects in JQuery Part 1 </title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+</head>
+
+<body>
+    <h1 class="myheading" id="heading1">Effects in JQuery Part 1</h1>
+    <p>This is Para Outside Div</p>
+    <button id="btn1">Click ME</button>
+    <button id="btn2">Click ME 2</button>
+    <button id="btn3">Click ME 3</button>
+    <button id="btn4">Click ME 4</button>
+    <button id="btn5">Click ME 5</button>
+    <div id="first" class="mydiv">
+        <p>this is first para of first div</p>
+        <p>this is Second para of first div</p>
+    </div>
+    <div id="second" class="mydiv">
+        <p>this is second para of second div</p>
+    </div>
+    <div id="third" class="mydiv">
+        <ul>
+            <li>
+                List Item 1
+            </li>
+            <li>
+                List Item 2
+            </li>
+            <li>
+                List Item 3
+            </li>
+            <li>
+                List Item 4
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                List Item 1
+            </li>
+            <li>
+                List Item 2
+            </li>
+            <li>
+                List Item 3
+            </li>
+            <li>
+                List Item 4
+            </li>
+        </ul>
+    </div>
+
+    <!-- <button id="btn2">Click ME 2</button> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $(document).ready(function(){
+            // $("#btn1").click(function(){
+            //     $("#first").hide();
+            // });
+
+            $("#btn1").click(function(){
+                $("#first").fadeOut(2000);
+            });
+
+            $("#btn2").click(function(){
+                $("#first").show();
+            });
+
+            $("#btn4").click(function(){
+                $("#first").slideUp();
+            });
+
+            $("#btn5").click(function(){
+                $("#first").slideToggle();
+            });
+
+            $("#btn3").click(function(){
+                $("#first").toggle();
+            });
+
+
+        })
+   
+    });
+ 
+
+</script>

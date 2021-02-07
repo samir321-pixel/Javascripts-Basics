@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title> Date Picker in JQuery</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div id="my">
+        <h1 class="myheading" id="heading1">Date Picker in JQuery </h1>
+        <input id="date" type="text">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="core/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#date").datepicker({
+            numberOfMonths:1,
+            changeYear:true,
+            changeMonth:true,
+            showWeek:true,
+            showOtherMonths:true,
+            minDate: new Date(2021,0,1),
+            maxDate: new Date(2021,1,21)
+        });
+    });
+</script>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title> Tool tip in JQuery</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div id="my">
+        <h1 class="myheading" id="heading1">Tool Tip in JQuery </h1>
+        <img src="/Capture.PNG" width="800px" title="samir" id="img">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="core/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function () {
+        $("img").tooltip({
+            track: false,
+            content: "Samir Is best",
+            show: {
+                effect: "blind",
+                duration: 2000
+            },
+            hide: {
+                effect: "highlight",
+                duration: 2000
+            }
+        });
+    });
+</script>

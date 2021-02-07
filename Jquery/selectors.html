@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title> Selectors in JQuery Part 1</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <h1 class="myheading" id="heading1">Selectors in JQuery Part 1</h1>
+
+    <h1 class="myheading" id="heading1">Selectors in JQuery Part 1</h1class="myheading">
+    <h1 id="heading2">Selectors in JQuery Part 1</h1>
+    <button id="btn1" onclick="fn1()">Click Me</button>
+    <div class="myheading">
+        <p> This is paragrapgh</p>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    function fn1() {
+        // $("#heading1").fadeToggle();
+        $(".myheading").fadeToggle();
+    }
+</script>
+
+</html>

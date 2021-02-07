@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title> Regualar Expression Part 2</title>
+    <script type="text/javascript">
+        function validate() {
+            var name = document.getElementById("uname").value;
+            //var regx = /[sdp]imple/;
+            //var regx = /[a-x A-X]imple/;
+            //var regx = /[0-9]imple/;
+            var regx = /[0-5]a[5-9]c/;
+            var regx = /[^1abc]abc/; // it will exclu
+            if (regx.test(name)) {
+                alert("valid")
+                document.getElementById("user").style.visibility = "hidden"
+            }
+            else {
+                alert("invalid")
+                document.getElementById("user").style.visibility = "visible"
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Regualar Expression Part 2</h1>
+    <form>
+        <input id="uname" placeholder="Name" type="text">
+        <label id="user" style="color: red; visibility: hidden;">Invalid</label>
+        <br><br>
+        <button onclick="validate()" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

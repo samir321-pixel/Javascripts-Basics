@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Theming in JQuery</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <h1>Theming Jquiery Example</h1>
+
+    <div id="my">
+        <img id="resize" src="/Capture.PNG" alt="">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="core/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    $("#resize").resizable({
+        autohide:true,
+        ghost:true,
+        aspectRatio:true
+    });
+
+</script>

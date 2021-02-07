@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title> Widget Modification in JQuery</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <h1>Widget Modification Jquiery Example</h1>
+    <button id="action">Change</button>
+    <br>
+    <div id="date" title="Calender">
+
+    </div>
+    <div id="msg" title="msg">
+        <h3>Dummy Titile</h3>
+        <img src="/Capture.PNG" width="200px">>
+    </div>
+    <br>
+    <div id="panel">
+        <div>Samir Saitwal</div>
+        <div> hello My name Is samir, nice to meet u.. ok bye i am going to sleeep bye bye bye bye</div>
+        <h3>Simple</h3>
+        <p>Buldana is cold city it is in india the people are really cool not like people who work in videshi company
+        </p>
+        <h3>Vishaka Subhedar</h3>
+        <p>She is Maharashtra Fav Actress</p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="core/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#date").datepicker({
+            numberOfMonths: 1,
+            changeYear: true,
+            changeMonth: true,
+            showWeek: true,
+            showOtherMonths: true,
+            minDate: new Date(2021, 0, 1),
+            maxDate: new Date(2021, 1, 21)
+        });
+        $("#msg").dialog({
+            title: "please Click",
+            draggable: true,
+            resizable: true,
+        })
+        $("#panel").accordion({
+            collapsible: true,
+            // event:"mouseover"
+            event: "click",
+            animate: 250,
+            active: 0,
+            heightStyle: true,
+            icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" }
+        });
+        $("#action").click(function () {
+            $("#msg").dialog("option", "height", 600)
+        })
+
+    })
+
+</script>

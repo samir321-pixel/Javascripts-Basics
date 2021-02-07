@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title> Callback in JQuery </title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+</head>
+
+<body>
+    <h1 class="myheading" id="heading1">Callback in JQuery </h1>
+    <p>This is Para Outside Div</p>
+    <button id="btn1">Toggel ME</button>
+    <div id="first" class="mydiv">
+        <p>this is first para of first div</p>
+        <p>this is Second para of first div</p>
+    </div>
+    <div id="second" class="mydiv">
+        <p>this is second para of second div</p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            //chaining effects
+            $("#first").slideUp(2000).slideDown(3000).fadeOut(1000).fadeIn(400);
+            // $("#first").fadeToggle(1000, function () {
+            //     alert("Divison is faded Out")
+            // });
+        });
+    });
+</script>

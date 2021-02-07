@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title> Dom Manipulation in JQuery Part 2 </title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+</head>
+
+<body>
+
+    <h1 class="myheading" id="heading1">Dom <b>Manipulation</b> in JQuery part 2 </h1>
+    <button id="btn1">Set Value</button>
+    <button id="btn2">Get Value</button>
+    <div id="first" class="mydiv">
+        <p id="p1" class="c1" value="Hello Samir">this is first para of first div</p>
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#p1").css("font-size","25px")
+        })
+
+        $("#btn2").click(function () {
+            $("#p1").attr("class", "")
+        })
+    });
+</script>

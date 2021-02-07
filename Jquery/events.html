@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title> Events in JQuery </title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+</head>
+
+<body>
+    <h1 class="myheading" id="heading1">Events in JQuery </h1>
+    <p>This is Para Outside Div</p>
+    <div id="first" class="mydiv">
+        <p>this is first para of first div</p>
+        <p>this is Second para of first div</p>
+    </div>
+    <div id="second" class="mydiv">
+        <p>this is second para of second div</p>
+    </div>
+    <div id="third" class="mydiv">
+        <ul>
+            <li>
+                List Item 1
+            </li>
+            <li>
+                List Item 2
+            </li>
+            <li>
+                List Item 3
+            </li>
+            <li>
+                List Item 4
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                List Item 1
+            </li>
+            <li>
+                List Item 2
+            </li>
+            <li>
+                List Item 3
+            </li>
+            <li>
+                List Item 4
+            </li>
+        </ul>
+    </div>
+    <button id="btn1">Click ME</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(fn1);
+        function fn1() {
+            $("#first").fadeToggle();
+        }
+    });
+    // $("button").click(fn1);
+    // function fn1() {
+    //     $("#first").fadeToggle();
+    // }
+
+</script>

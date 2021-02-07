@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title> Accordian in JQuery</title>
+    <link rel="stylesheet" href="/Js/Css/style.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="core/jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <h1>Accordion Example</h1>
+    <div id="panel">
+        <h2>Samir Saitwal </h2>
+        <p>Hello I am Samir</p>
+
+        <h2>Jeevansh</h2>
+        <p>Hello I am Jeevansh And I am Hungry
+            I am Hungry I am Hungry I am Hungry I am Hungry I am Hungry</p>
+
+
+        <h2>Sam </h2>
+        <p>Hello I am Sam</p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="core/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    $("#panel").accordion({
+        collapsible: true,
+        // event:"mouseover"
+        event: "click",
+        animate: 250,
+        active: 0,
+        heightStyle: true,
+        icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" }
+    });
+</script>
